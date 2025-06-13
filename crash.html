@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Run</title>
+    <link rel="icon" href="img/catlogo.png">
+    <link rel="stylesheet" href="css/bootstrap-5.3.0-alpha3-dist/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS's/style-crash.css">
+    <!-- CSS do Bootstrap (minificado) -->
+</head>
+
+<body>
+    <div class="palco-game">
+        <!-- Seu conteúdo relacionado ao jogo aqui -->
+        <img src="img/nuvem.webp" alt="" class="nuvem">
+        <img src="img/crash-run.gif" alt="" srcset="" class="crash-run pulo">
+        <img src="img/tnt-crash.png" alt="inimigo crash" class="tnt">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <button onclick="window.location.href='index.html'" type="button" class="btn-voltar">←</button>
+            </div>
+            <div class="col-2">
+                <button onclick="window.location.href='ping.html'" class="btn-voltar1">→</button>
+            </div>
+            <div class="col-2">
+                <button onclick="window.location.href='meteoro.html'" class="btn-voltar1">→</button>
+            </div>
+            <div class="col-2">
+                <button onclick="pulo()" class="btn-pular">↑</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/crash-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    justify-content: center;
+    background: no-repeat url(../imagens/arcade.jpg);
+}
+
+.Titulo {
+    color: #00e632;
+    font-family: 'Major Mono Display', monospace;
+    margin-top: 2em;
+}
+
+@keyframes neon1 {
+    from {
+        box-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 9px green,
+            0 0 12px green, 0 0 12px green, 0 0 25px green, 0 0 7px green;
+    }
+
+    to {
+        box-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px yellowgreen,
+            0 0 9px yellowgreen, 0 0 10px yellowgreen, 0 0 12px yellowgreen, 0 0 15px yellowgreen;
+    }
+}
+
+canvas {
+    background-color: rgb(0, 0, 0);
+    border: 5px solid green;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.butao {
+    border: 2px solid black;
+}
+
+#play_button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(9, 235, 9);
+    color: rgb(3, 0, 0);
+    font-family: monospace;
+}
+
+#play_button:disabled {
+    color: rgb(155, 155, 155);
+}

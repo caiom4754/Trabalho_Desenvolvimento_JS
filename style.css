@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+body {
+    background-image: url('img/bg-space2.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+h1,
+.titulo-portifolio {
+    font-family: 'Major Mono Display', monospace;
+    color: #fff;
+    text-align: center;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+
+}
+
+.titulo-portifolio {
+    margin: 0.7em 0px;
+}
+
+article {
+    padding: 2em 0px;
+    background: linear-gradient(to right, rgba(85, 0, 85, 0.726), transparent);
+    /* Degradê à direita */
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+}
+
+section {
+    margin: 5em 0em;
+}
+
+.marioface {
+    width: 5em;
+    height: 5em;
+}
+
+.games {
+    margin-top: -0.1em;
+}
+
+.jogar-agora {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 1.5em;
+    color: rgb(202, 206, 224);
+    border: 2px solid rgb(238, 89, 164);
+    background-color: rgb(41, 0, 41);
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    border-radius: 50px;
+}
+
+@keyframes neon1 {
+    from {
+        box-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 9px darkviolet,
+            0 0 12px darkviolet, 0 0 12px darkviolet, 0 0 25px darkviolet, 0 0 7px darkviolet;
+    }
+
+    to {
+        box-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px red,
+            0 0 9px red, 0 0 10px red, 0 0 12px red, 0 0 15px red;
+    }
+}
+
+aside {
+    background-image: linear-gradient(to left, black, transparent);
+}
+
+.subtitulo {
+    color: #fff;
+    text-align: right;
+    margin-bottom: -2.0em;
+
+}
+
+.bloco-cont {
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 0.5em;
+    border-radius: 20px;
+    margin-bottom: -4.5em;
+}
+
+.materia {
+    color: #fff;
+}
+
+.conteudo {
+    color: #fff;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+}
